@@ -1,11 +1,8 @@
-html {
-  font-family: Arial, Helvetica, sans-serif;
-}
-.filme-hoje {
+.hoje {
   color: darkred;
 }
 
-.filme-amanha {
+.amanha {
   color: darkblue;
 }
 
@@ -17,6 +14,10 @@ h2 a {
   color: seagreen;
 }
 
-/* p {
+p {
   font-size: 20px;
-} */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
