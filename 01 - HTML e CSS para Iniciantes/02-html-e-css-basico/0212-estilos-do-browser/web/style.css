@@ -1,0 +1,7 @@
+body {
+  color: tomato;
+}
+
+a {
+  color: inherit; /* herança - tem uma cor padrão, para herdar temos que definir o valor para inherit */
+}
