@@ -1,0 +1,23 @@
+div {
+  background: #aaa;
+  /* Por padrão a largura que é o widht, é definido como auto. O auto significa: pegue o tamanho total do elemento pai. O elemento pai nesse caso é o body, o corpo e tá pegando 100% da tela */
+  width: 140px;
+  height: 80px; /* Medindo a altura fica 140 X 80, independente de ter conteúdo. Ele ignora o conteúdo e respeita a altura e largura que damos --- No height ele somou 30px + 80px + 30px de novo, dando 140 no total de altura. */
+  padding: 30px; /* O padding é uma margem interna. Não dá 30 exato, pois a tipografia, o texto não ocupa exatamente a pequena área dele, ocupa uma área maior. --- A caixa somou a largura e a altura ao padding. Tenho 200 de largura, pois seria 140px + 30px de padding pra direita e 30px de padding pra esquerda. Ele soma sempre o left e o right. */
+  border: 10px solid #111; /* 1º tamanho da borda / 2º tipo de borda, se é tracejada, sólida. Geralmente usamos sólida / 3º cor. A cor por padrão é preto*/
+  /*Somando o elemento completo deu 220 X 160. Somou os 10 px do topo + 10px do bottom, com o heigh, que era 140px e somou 10 pro lado e 10 pro outro e ficou os 200px que estava no total. */
+  margin: 30px; /* O body por padrão tem uma margem. Tirando a margem do body ele fica com 30px pra cada lado. */
+}
+
+body {
+  margin: 0px; /*Sempre começar um documento com margem de 0px */
+}
+
+h1 {
+  /*É um elemento de bloco. Funciona exatamente como uma div, a diferença é que ele vem com alguns estilos pré setados */
+  background: white; /*Um elemento de bloco começa com o width automático, então o background bota a cor de ponta a ponta */
+  /*width: 100px; Um width de 100 px diminui. Se a tipografia não cabe ele quebra a linha e aumenta a altura do elemento. A altura é automatica e vai de acordo com o tamanho do conteúdo. O conteúdo aumentando, aumenta a altura. É padrão do elemento de bloco. */
+  padding: 20px; /*O padding inicial é de 0. O padding distancia os elementos e desgruda tipografia pra cima e pros lados */
+  border: 1px solid #111;
+  margin: 20px; /* No CSS as margens colidem, e a margem que for maior vai vencer. A margem vai ser de 30px, pois aqui temos 20px de margem e a margem da div é 30px, portanto, maior e prevalece. Ele não soma margens */
+}
