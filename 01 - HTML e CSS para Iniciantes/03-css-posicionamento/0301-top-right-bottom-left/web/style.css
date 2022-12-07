@@ -1,0 +1,13 @@
+span {
+  display: inline-block;
+  background: #ddd;
+}
+
+span {
+  padding: 30px; /* Adiciona para todos os lados */
+  padding: 20px 40px; /* Adiciona 20px pra cima e pra baixo // Adiciona 40px para os lados */
+  padding: 40px 100px 200px 10px; /*40px p/ cima, 100px p/ direita, 200px p/ baixo, 10px p/ esquerda.*/
+  border: 10px solid black; /* 10px de borda pra todos os lados */
+  border-top: 20px solid blue; /* 20px de borda para cima */
+  border-width: 30px 60px; /* 30px cime/baixo e 60px dos lados - Quando quisermos tamanhos diferentes */
+}
