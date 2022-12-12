@@ -1,15 +1,23 @@
+/* Limpando ul */
 ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
-  display: flex;
-  gap: 20px;
+  display: flex; /*Para ficar um item ao lado do outro*/
+  gap: 20px; /*Para separar os itens - outra alternativa é usar margin nos li*/
 }
 
+/*
+Alternativa ao uso do gap na <ul>
+li {
+  margin: 0 10px; -> Margem igual para todos os lados 
+} */
+
+/* Estilizando elemento */
 a {
   text-decoration: none;
   background: #eee;
   padding: 10px 20px;
-  display: block;
+  display: block; /*Pois é um elemento inline e o flex tá no li. Sem o block ou inline-block, a caixa estoura quando mexemos no padding */
   color: #000;
 }
