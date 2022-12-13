@@ -19,18 +19,19 @@ h1 {
   height: 300px;
   background-color: lightcoral;
   background-image: url("./img/pattern.svg");
-  background-repeat: repeat;
-  /* background-size: 500px; */
+  background-repeat: repeat; /*Posso repetir só no eixo x (repeat-x) ou só no eixo y (repeat-y)*/
+  /* background-size: 500px; - Aumenta o tamanho das bolinhas do svg */
 }
 
 .linear {
   height: 200px;
   background-image: linear-gradient(
-    to right,
+    to right, /* É a direção do gradiente */
     lightblue 0%,
     lightcoral 10%,
     blue 20%,
     green 30%
+    /*Na função linear-gradient () colocamos a cor que queremos. */
   );
 }
 
