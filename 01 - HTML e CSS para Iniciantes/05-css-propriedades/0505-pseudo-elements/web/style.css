@@ -1,21 +1,86 @@
+/* Pseudo Elements */
+
+/* ::before e ::after -> elementos usados geralmente pra decoração*/
+/* ::before -> Criando pseudo elemento antes do h1*/
+/*content -> conteúdo desse elemento
+content: ""; -> É um elemento vazio, como se fosse uma div vazia no html
+content começa sem nenhum estilo, temos que definir um display*/
+/* h1::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 4px;
+  background: #caf;
+  margin-right: 10px;
+} */
+
+/* h1::before {
+  content: "";
+  display: block; -> ( Ocupa 100% de ponta a ponta por ser elemento de bloco. Com ::before fica posicionado em cima do h1)
+  width: 40px;
+  height: 4px;
+  background: #caf;
+  margin-right: 10px;
+} */
+
+/* ::after -> Criando pseudo elemento após o h1*/
+/* h1::after {
+  content: "depois";
+} */
+
 h1::after {
   content: "";
-  display: block;
+  display: block; /* -> (Ocupa 100% de ponta a ponta por ser elemento de bloco. Com ::after fica posicionado embaixo do h1) */
   width: 40px;
   height: 4px;
   background: #caf;
 }
 
+/* h1::after {
+  content: "";
+  display: block; -> ( ocupa 100% de ponta a ponta por ser elemento de bloco. Com ::after fica posicionado embaixo do h1) 
+  width: 40px;
+  height: 4px;
+  background: #caf;
+  margin-right: 10px;
+} */
+
+/* (Posicionando em local específico com position) 
+[ Se um elemento é position absolute, o pai tem que ser position relative pra posicionar ele relativamente ao pai ]
+
+Exemplo:
+
+ h1 {
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 20px;
+  background: #caf;
+  margin-right: 10px;
+  position: absolute;
+  top: 20px;
+  z-index: -1;  Para ficar atrás do h1
+} */
+
+/* Decoração para listas */
+/*Criando próprio formato de bolinha via CSS*/
+
+/*Tirando estilo da ul */
 ul {
   list-style: none;
 }
 
 li {
   font-size: 1.5rem;
-  display: flex;
-  align-items: center;
+  display: flex; /*display-flex: para alinhar a bolinha ao topo*/
+  align-items: center; /*align-items:center -> pra alinhar ao centro*/
 }
 
+/*Criando elemento pra cada um dos li*/
 li::before {
   content: "";
   display: inline-block;
@@ -24,5 +89,5 @@ li::before {
   background: linear-gradient(#caf, #fff);
   border: 2px solid #caf;
   margin-right: 10px;
-  border-radius: 50%;
+  border-radius: 50%; /*para arredondar conteúdo: border-radius e arredondar mais do que metade*/
 }
