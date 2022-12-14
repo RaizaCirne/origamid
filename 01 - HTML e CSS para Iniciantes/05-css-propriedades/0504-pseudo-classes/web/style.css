@@ -6,48 +6,101 @@ a {
   text-decoration: none;
   background: #caf;
   color: #217;
+  /* transition: 0.3s;  Para animar a transição do background e do color */
 }
 
+/* Pseudo Seletor */
+
+/* :hover - Mouse por cima */
 a:hover {
   background: #adf;
   color: #147;
 }
 
+/* :focus - Usando tab, ele navega por alguns elementos que são possíveis de serem focados, como botões, links, formulários. São elementos que permitem o usuário interagir com eles, não são elementos só de leitura. Por isso, o tab do teclado dá o foco nesse elemeto */
 a:focus {
   background: #cfa;
   color: #371;
+  /* outline: none; Remove o outline que é tipo uma borda no elemento (Cuidado: Por padrão, na maioria dos browsers tem o outline. Isso indica que ele está focado. Um usuário que utiliza o teclado pra navegar pode não entender que isso significa foco. Não tire o outiline, se for tirar, substituir por algo parecido que tenha o estilo do seu site, como pintar uma borda ou algo do tipo.*/
 }
 
+/* :active - Ao clicar no botão ele é ativado | Escreve por cima do focus quando clicamos no botão */
 a:active {
   background: #ffa;
   color: #761;
 }
 
+/* :visited - Para link que já foi visitado | Tipo quando acessamos o google e fica um pouquinho roxo, pois já entramos na página */
+
+/* :visited tem grande poder sob o elemento. hover, active e focus não são mais aplicados, pois o visited escreve por cima de todos os demais, pois o link já foi visitado. Serve para para uma lista de links como o google que você quer saber se já clicou naquele link ou não. */
 /* a:visited {
   background: #fda;
   color: #731;
 } */
 
+/* Seleção para todos os elementos */
+/* .lista-1 li {
+  background: #ffa;
+} */
+
+/* :first-child - Seleção para o primeiro da lista */
+/* first-child tem mais força que o li */
 .lista-1 li:first-child {
   background: #caf;
 }
 
+/* :last-child - Seleção para o último elemento da lista */
 .lista-1 li:last-child {
   background: #cfa;
 }
 
+/* :nth-child() é uma função que recebe alguns argumentos */
+/* .lista-1 li:nth-child() {
+  background: #cfa;
+} */
+
+/* selecionando o segundo elemento */
+/* .lista-1 li:nth-child(2) {
+  background: #cfa;
+} */
+
+/* selecionando o terceiro elemento */
 .lista-1 li:nth-child(3) {
   background: #cfa;
 }
 
+/* selecionando todos os elementos pares */
+/* .lista-2 li:nth-child(even) {
+  background: #cfa;
+} */
+
+/* selecionando todos os elementos impares */
+/* .lista-2 li:nth-child(odd) {
+  background: #cfa;
+} */
+
+/* selecionando todo terceiro elemento - de 3 em 3 (3, 6, 9..) */
+/* .lista-2 li:nth-child(3n) {
+  background: #cfa;
+} */
+
+/* selecionando de dois em dois - (mesma coisa que o even, que é o par) */
+/* .lista-2 li:nth-child(2n) {
+  background: #cfa;
+} */
+
+/* selecionando de quatro em quatro */
 .lista-2 li:nth-child(4n) {
   background: #cfa;
 }
 
+/* selecionando todas as li, menos a primeira, a terceira e a última */
+/* Atenção - :not() está em relação ao li  */
 .lista-3 li:not(:first-child, :last-child, .terceiro) {
   background: #caf;
 }
 
+/*Decorando elementos de h2 com underline, menos o contato*/
 h2:not(.contato) {
   text-decoration: underline;
 }
