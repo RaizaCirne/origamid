@@ -51,6 +51,10 @@ p {
   text-transform: uppercase;
 }
 
+.menu a:hover {
+  border: 2px solid #900;
+}
+
 .conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -85,6 +89,10 @@ p {
   text-transform: uppercase;
 }
 
+.botao:hover {
+  background: #900;
+}
+
 .subtitulo {
   font-size: 4rem;
   text-transform: uppercase;
@@ -113,6 +121,18 @@ p {
 
 li {
   list-style-type: none;
+}
+
+ol {
+  position: relative;
+}
+
+li:hover::before {
+  content: "";
+  width: 4px;
+  height: 120px;
+  background: #900;
+  position: absolute;
 }
 
 .rodape {
