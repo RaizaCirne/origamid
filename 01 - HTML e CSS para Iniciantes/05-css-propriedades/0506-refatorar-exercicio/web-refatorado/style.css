@@ -135,6 +135,10 @@ li:hover::before {
   position: absolute;
 }
 
+li:nth-child(odd) {
+  background: #f7f7f7;
+}
+
 .rodape {
   background: #fff;
   width: 100%;
