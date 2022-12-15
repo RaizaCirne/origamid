@@ -72,10 +72,24 @@ p {
   justify-items: end;
 }
 
-.detalhe {
+/* .detalhe {
   width: 60px;
   height: 4px;
   background: #e21;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+} */
+
+article {
+  position: relative;
+}
+
+h1::before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #900;
   position: absolute;
   top: 30px;
   right: -30px;
