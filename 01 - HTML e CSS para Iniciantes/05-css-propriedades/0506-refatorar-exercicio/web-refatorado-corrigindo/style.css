@@ -20,14 +20,14 @@ img {
   display: block;
 }
 
+ul {
+  list-style: none;
+}
+
 .listas-1 {
   display: flex;
   margin: 0px;
   padding: 0px;
-}
-
-.lista-1 {
-  list-style-type: none;
 }
 
 a {
@@ -55,14 +55,15 @@ p {
 
 .menu a {
   background: #ffffff;
-  padding: 15px 30px;
+  padding: 1rem 2rem;
   border-radius: 4px;
   color: #000000;
   text-transform: uppercase;
+  border: 2px solid #ffffff;
 }
 
 .menu a:hover {
-  border: 2px solid #900;
+  border-color: #900;
 }
 
 .conteudo {
@@ -95,11 +96,21 @@ p {
   right: -30px;
 } */
 
-article {
+/* article {
   position: relative;
+} */
+
+.introducao::before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #e21;
+  position: absolute;
+  top: 30px;
+  right: -30px;
 }
 
-h1::before {
+/* h1::before {
   content: "";
   width: 60px;
   height: 4px;
@@ -107,12 +118,12 @@ h1::before {
   position: absolute;
   top: 30px;
   right: -30px;
-}
+} */
 
 .botao {
   background: #e21;
   color: #fff;
-  padding: 15px 30px;
+  padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
 }
@@ -126,14 +137,15 @@ h1::before {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
   text-align: right;
-  padding: 40px;
+  padding: 2.5rem;
   align-self: center;
   background-image: url(./img/onda.svg);
 }
 
 .vantagens {
   background: #fff;
-  padding: 40px;
+  padding: 2.5rem;
+  list-style: none;
 }
 
 .vantagens-item {
@@ -141,31 +153,40 @@ h1::before {
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   padding: 20px;
+  border-left: 4px solid transparent;
+}
+
+.vantagens-item:hover {
+  border-color: #e21;
+}
+
+.vantagens-item:nth-child(odd) {
+  background: #f7f7f7;
 }
 
 .vantagens-item p {
   grid-column: 2;
 }
 
-.lista-2 {
+/* .lista-2 {
   list-style-type: none;
-}
+} */
 
-.listas-2 {
+/* .listas-2 {
   position: relative;
-}
+} */
 
-.lista-2:hover::before {
+/* .lista-2:hover::before {
   content: "";
   width: 4px;
   height: 120px;
   background: #900;
   position: absolute;
-}
+} */
 
-.lista-2:nth-child(odd) {
+/* .lista-2:nth-child(odd) {
   background: #f7f7f7;
-}
+} */
 
 .rodape {
   background: #fff;
