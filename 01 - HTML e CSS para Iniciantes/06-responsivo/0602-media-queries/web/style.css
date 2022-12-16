@@ -1,3 +1,4 @@
+/*Conteúdo aplicado em todo o CSS, sempre*/
 img {
   max-width: 100%;
   display: block;
@@ -13,6 +14,11 @@ h1 {
   grid-column: 1 / -1;
 }
 
+/*Conteúdo aplicado quando for abaixo de 600px
+
+-> Dentro desse bloco @media (max-width: 600px) fica todo o código que só vai ser ativado quando a tela tiver no máximo 600px de largura. 
+
+-> max-width significa: menor que 600px*/
 @media (max-width: 600px) {
   div {
     grid-template-columns: 1fr;
@@ -20,6 +26,9 @@ h1 {
   h1 {
     background: lightpink;
   }
+  /* img {
+    display: none; -> Remove o elemento da tela - muito cuidado com display:none. Não remover nenhuma funcionalidade do site, pois ele está no mobile. Pode reorganizar, conteúdo, esconder decorações e criar novas interações pra mostrar ou esconder algum elemento específico, mas jamais tirar totalmente uma funcionalidade
+  } */
 }
 
 @media (min-width: 1000px) {
@@ -28,8 +37,34 @@ h1 {
   }
 }
 
+/*Acima de 700px e abaixo de 900px -> As duas condições precisam ser verdadeiras para o estilo do bloco ser aplicado*/
 @media (min-width: 700px) and (max-width: 900px) {
   p {
     background: lightskyblue;
   }
 }
+
+/*
+Outros exemplos: 
+
+1) Ao tentar imprimir não pinta o rosa no body, pois eu disse pro @media só tela (screen)
+
+@media screen {
+  body {
+    background: pink;
+  } 
+}
+
+2) Aplicado estilo apenas no momento de imprimir:
+@media print {
+  body {
+    background: pink;
+  } 
+}
+
+3) Conteúdo aplicado quando for acima de 1000px e abaixo de 500px. A partir de 1000px começa a aplicar os valores desse bloco. 
+@media (min-width: 1000px), (max-width: 500px) {
+  html {
+    font-size: 150%; -> Se tudo tivesse com px isso não adiantaria, mas como está em rem, ele aumenta.
+  }
+} */
