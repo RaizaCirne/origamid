@@ -9,10 +9,11 @@ img {
   gap: 1rem;
 }
 
+/*Não usar object-fit para imagem que só faça sentido inteira*/
 .cover img {
-  height: 100%;
-  object-fit: cover;
-  object-position: top left;
+  height: 100%; /*Para pegar a altura do texto, mas distorce*/
+  object-fit: cover; /*corta a imagem para que caiba sempre dentro do conteúdo. Altura do elemento vai ficar na altura do texto. */
+  object-position: top left; /*Digo onde quero que a imagem comece a cortar */
 }
 
 p {
