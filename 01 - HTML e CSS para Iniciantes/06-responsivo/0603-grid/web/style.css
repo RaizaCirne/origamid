@@ -9,6 +9,11 @@ div {
   gap: 1rem;
 }
 
+/* .galeria {
+  grid-template-columns: repeat(autofit, 150px); -> Ele encaixa várias imagens uma atrás da outra quando der mais 150px
+} */
+
+/* grid-row: 2; ou order: 2; -> Colocando imagem na linha 2*/
 @media (min-width: 400px) {
   .minmax img {
     order: 2;
@@ -16,9 +21,17 @@ div {
 }
 
 .galeria {
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /*Fica igual ao anterior, mas não cria mais aquele espaço vazio. Quando não der pra colocar mais 150px do lado, ele aumenta os demais elementos.*/
 }
 
 p {
   font-size: 2rem;
 }
+
+/* 
+div {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, 300px); > Vai criando quantas colunas conseguir de 300px 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); -> Quando for menos que 300px, quebre para uma coluna apenas. 
+  gap: 1rem;
+} */
