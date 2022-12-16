@@ -20,7 +20,7 @@ img {
   display: block;
 }
 
-ul {
+.listas-1 {
   display: flex;
   margin: 0px;
   padding: 0px;
@@ -80,6 +80,10 @@ p {
   gap: 20px;
   align-content: center;
   justify-items: end;
+}
+
+.introducao h1 {
+  font-size: 2rem; /* Quando colocamos h1 dentro de section e article, ele muda o estilo do h1 diminuindo o tamanho da tipografia, pois tenta normalizar o nível do h1 ao nível do h2 */
 }
 
 /* .detalhe {
@@ -147,7 +151,7 @@ h1::before {
   list-style-type: none;
 }
 
-ol {
+.listas-2 {
   position: relative;
 }
 
