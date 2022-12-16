@@ -8,7 +8,9 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   max-width: 960px;
-  margin: 100px auto;
+  /* margin auto cria valores automáticos para os lados e vai estar sempre alinhado ao centro da tela.  */
+  /* margin: 0 auto; Pra cima e pra baixo 100, pro lado e pro outro automática */
+  margin: 100px auto; /*Pra cima e pra baixo 100, pro lado e pro outro automática*/
 }
 
 .cover img {
@@ -17,6 +19,7 @@ img {
   object-position: top left;
 }
 
+/*Alinhar .texto ao centro de .cover*/
 .texto {
   align-self: center;
 }
