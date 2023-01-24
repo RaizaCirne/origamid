@@ -93,6 +93,11 @@ p {
   right: -30px;
 }
 
+.introducao-cover img {
+  object-fit: cover;
+  height: 100%;
+}
+
 .botao {
   background: #e21;
   color: #fff;
@@ -113,6 +118,7 @@ p {
   padding: 40px;
   align-self: center;
   background-image: url("./img/onda.svg");
+  /* word-break: break-all; */
 }
 
 .vantagens {
@@ -148,10 +154,8 @@ p {
   box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
-  .menu,
+@media (max-width: 1000px) {
   .conteudo {
-    display: grid;
     grid-template-columns: 1fr;
   }
 }
