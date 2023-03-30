@@ -1,0 +1,18 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap; /*quebra de linha quando diminui a tela*/
+  gap: 20px;
+  place-content: center; /*atalho de justify-content: center; e align-content: center; juntos*/
+  /* height: 100vh; altura de 100% da tela   */
+}
+
+body {
+  margin: 0px; /*Tira o espaço que sobra e fica escrolando*/ 
+}
+
+h2 {
+  background: #e7e7e7;
+  border: 1px solid #d7d7d7;
+  padding: 20px;
+  margin: 0px;
+}
