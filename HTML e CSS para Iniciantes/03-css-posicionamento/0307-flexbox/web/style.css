@@ -2,12 +2,13 @@
   display: flex;
   flex-wrap: wrap; /*quebra de linha quando diminui a tela*/
   gap: 20px;
-  place-content: center; /*atalho de justify-content: center; e align-content: center; juntos*/
+  /* place-content: center; -> atalho de justify-content: center; e align-content: center; juntos*/
   /* height: 100vh; altura de 100% da tela   */
+  justify-content: center;
 }
 
 body {
-  margin: 0px; /*Tira o espaço que sobra e fica escrolando*/ 
+  margin: 0px; /*Tira o espaço que sobra e fica escrolando*/
 }
 
 h2 {
@@ -15,4 +16,7 @@ h2 {
   border: 1px solid #d7d7d7;
   padding: 20px;
   margin: 0px;
+  /* flex: 1; -> Atalho para: (flex-grow: 1; -> quero que o elemento cresça), (flex-shrink: 1; -> é o valor padrão e pode diminuir caso tenha que quebrar), (flex-basis:0%; -> informa que o espaço distribuido pelo flex-grow deve ser igual entre os elementos). 
+ 
+ obs: Com isso o justify-content:center; do flex não pega, porque ele distribui o espaço em branco, então não tem espaço em branco sobrando pra tentar justificar o conteúdo*/
 }
