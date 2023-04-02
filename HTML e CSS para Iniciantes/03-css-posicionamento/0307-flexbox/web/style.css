@@ -28,7 +28,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(150px, auto));
   /*repeat() -> cria mais colunas sempre que der pra criar*/
   /* repeat(4, 1fr) -> cria 4 colunas de 1fr cada uma*/
-  /* repeat(auto-fit, 1fr) -> tente encaixar quantos itens for possível*/
+  /* repeat(auto-fit) -> tente encaixar quantos itens for possível*/
   /*1f -> distribua o espaço em branco total*/
   /*minmax(150px, auto) -> é uma função que recebe dois valores, o valor minimo e o máximo*/
 }
