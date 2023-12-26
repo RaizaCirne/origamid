@@ -15,7 +15,7 @@
 
 
 function natal () {
-  return "Feliz Natal"
+  return "Feliz Natal e um próspero ano novo"
 }
 
 console.log(natal());
