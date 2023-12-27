@@ -14,8 +14,9 @@
 // console.log(multiplicacao(2,3));
 
 
+let nome = "Raíza"
 function natal () {
-  return "Feliz Natal e um próspero ano novo"
+  return `${nome}, tenha um ano novo cheio de prosperidade, saúde, dinheiro, felicidade e muito amor!`
 }
 
 console.log(natal());
