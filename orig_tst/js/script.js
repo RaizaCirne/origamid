@@ -15,10 +15,11 @@
 
 
 let nome = "Raíza"
-function anoNovo () {
-  return `${nome}, tenha um ano novo cheio de prosperidade, saúde, dinheiro, felicidade e muito amor!`
+let amor = "Ana"
+function prosperidade( ) {
+  return `${nome} e ${amor} terão muito dinheiro, saúde, amor, felicidade, paz, alegria`;
 }
 
-console.log(anoNovo());
+console.log(prosperidade());
 
 
