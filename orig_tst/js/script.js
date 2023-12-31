@@ -22,7 +22,6 @@ function prosperidade( ) {
 }
 
 console.log(prosperidade());
-console.log(prosperidade);
 
 
 
