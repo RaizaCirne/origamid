@@ -24,4 +24,11 @@ function prosperidade( ) {
 console.log(prosperidade());
 
 
+function sucesso() {
+  return `${nome}, daqui há um ano você vai olhar para trás e ficar feliz e orgulhosa por ter começado hoje!` 
+}
+
+console.log(sucesso());
+
+
 
